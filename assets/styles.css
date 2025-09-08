@@ -47,7 +47,7 @@ body{
 .hero__art{display:flex;justify-content:center}
 .phone{
   width:300px;height:620px;border:1px solid var(--border);border-radius:28px;
-  background:linear-gradient(180deg,#0e1418,#0b0f12);box-shadow:var(--shadow);padding:14px;position:relative;
+  background:linear-gradient(180deg,#0e1418,#0b0f12);box-shadow:var(--shadow);padding:14px;position:relative
 }
 .phone__top{
   position:absolute;left:0;right:0;top:8px;text-align:center;color:var(--text);opacity:.9;font-weight:700
