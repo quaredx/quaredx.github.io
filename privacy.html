@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de Privacidade — Economiza Tanque | Quaredx</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <meta name="robots" content="index,follow" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a class="brand" href="/">Quaredx</a>
+      <a class="link" href="/">Voltar ao site</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Política de Privacidade</h1>
+    <p>Última atualização: <strong><span id="d"></span></strong></p>
+
+    <h2>1. Coleta de dados</h2>
+    <p>O aplicativo Economiza Tanque pode coletar informações que você insere (ex.: registros de abastecimento) para permitir os recursos do app. Não coletamos dados pessoais sensíveis sem seu consentimento.</p>
+
+    <h2>2. Uso de dados</h2>
+    <p>Os dados são usados para calcular métricas (ex.: consumo, custo por km), exibir histórico e sugerir melhorias. Não vendemos seus dados.</p>
+
+    <h2>3. Armazenamento e segurança</h2>
+    <p>Armazenamos dados localmente no dispositivo. Se futuramente integrarmos cloud (ex.: Firebase), atualizaremos esta política descrevendo camadas de segurança, criptografia em trânsito (HTTPS/TLS) e controles de acesso.</p>
+
+    <h2>4. Compartilhamento</h2>
+    <p>Não compartilhamos dados com terceiros, exceto quando exigido por lei.</p>
+
+    <h2>5. Seus direitos</h2>
+    <p>Você pode excluir seus dados pelo próprio aplicativo (quando disponível) ou solicitando a remoção via e-mail.</p>
+
+    <h2>6. Contato</h2>
+    <p>Dúvidas: <a href="mailto:suporte@quaredx.app">suporte@quaredx.app</a> (placeholder — podemos trocar pelo seu e-mail preferido).</p>
+
+    <h2>7. Alterações</h2>
+    <p>Esta política pode ser atualizada. Recomendamos revisar periodicamente.</p>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="y"></span> Quaredx — Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const now = new Date();
+    document.getElementById('y').textContent = now.getFullYear();
+    document.getElementById('d').textContent = now.toLocaleDateString('pt-BR');
+  </script>
+</body>
+</html>
