@@ -41,51 +41,57 @@
         <p class="small muted">*Link da Play Store provisório — atualizamos assim que a página estiver pública.</p>
       </div>
 
-      <!-- Mock do app (baseado nas suas imagens; sem usar imagens reais) -->
       <div class="hero__art">
-        <div class="phone">
-          <div class="phone__top">
-            <span class="phone__title">Economiza Tanque</span>
-          </div>
+  <div class="phone">
+    <div class="phone__notch"></div>
 
-          <div class="phone__screen">
-            <div class="block block--headline">
-              <div class="headline__icon" aria-hidden="true">⛽</div>
-              <div>
-                <div class="headline__title">Calcule e Economize</div>
-                <div class="headline__desc">
-                  Informe os preços e veja se compensa etanol ou gasolina (regra dos 70%).
-                </div>
-              </div>
-            </div>
+    <div class="phone__header">Economiza Tanque</div>
 
-            <div class="form">
-              <label class="label">Álcool (R$)</label>
-              <div class="input">R$ 3,79</div>
-
-              <label class="label">Gasolina (R$)</label>
-              <div class="input">R$ 5,89</div>
-
-              <div class="btn btn--primary btn--full btn--mock">
-                <span class="calc-ico">🧮</span> Calcular
-              </div>
-            </div>
-
-            <!-- Exemplo de resultado (variação visual conforme regra) -->
-            <div class="card-result card-result--ok">
-              <div class="card-row">
-                <span class="card-ico">⛽</span>
-                <div>
-                  <div class="card-title">Abasteça com <strong>ETANOL</strong></div>
-                  <div class="card-subtitle">Razão álcool/gasolina: <strong>64.3%</strong></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Observação: o layout também contempla o estado GASOLINA (âmbar) -->
+    <div class="phone__body">
+      <!-- HEADLINE -->
+      <div class="headline">
+        <div class="headline__icon" aria-hidden="true"></div>
+        <div>
+          <div class="headline__title">Calcule e Economize</div>
+          <div class="headline__desc">
+            Informe os preços e veja se compensa etanol ou gasolina (regra dos 70%).
           </div>
         </div>
       </div>
+
+      <!-- FORM FICTÍCIO -->
+      <div class="form">
+        <label class="label">Álcool (R$)</label>
+        <div class="fake-input">
+          <span class="prefix">R$</span>
+          <span class="value">3,79</span>
+        </div>
+
+        <label class="label">Gasolina (R$)</label>
+        <div class="fake-input">
+          <span class="prefix">R$</span>
+          <span class="value">5,89</span>
+        </div>
+
+        <button class="fake-button">
+          <span class="fake-button__icon"></span>
+          Calcular
+        </button>
+      </div>
+
+      <!-- RESULTADO (ETANOL) -->
+      <div class="result result--ok">
+        <div class="result__icon"></div>
+        <div class="result__text">
+          <div class="result__title">Abasteça com <strong>ETANOL</strong></div>
+          <div class="result__subtitle">Razão álcool/gasolina: <strong>64,3%</strong></div>
+        </div>
+      </div>
+      <!-- Para exibir GASOLINA, troque por: result result--warn -->
+    </div>
+  </div>
+</div>
+
     </section>
 
     <section id="como-funciona" class="how container">
