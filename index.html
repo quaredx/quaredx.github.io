@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Economiza Tanque — Calcule Alcool x Gasolina | Quaredx</title>
+  <meta name="description" content="Economiza Tanque ajuda você a planejar abastecimentos, acompanhar consumo e reduzir custos de combustível com dicas e métricas simples." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/assets/styles.css" as="style" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Economiza Tanque — economize combustível" />
+  <meta property="og:description" content="Planeje abastecimentos, acompanhe consumo e corte custos. Simples, rápido, gratuito." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://quaredx.github.io/" />
+  <meta property="og:image" content="https://quaredx.github.io/assets/og-cover.png" />
+
+  <!-- SEO básico -->
+  <meta name="robots" content="index,follow" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a class="brand" href="/">Quaredx</a>
+      <a class="link" href="/privacy.html">Política de Privacidade</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero__text">
+        <h1>Economiza <span class="accent">Tanque</span></h1>
+        <p class="subtitle">
+          O app inteligente para reduzir o custo por km: acompanhe consumo, planeje abastecimentos e receba dicas práticas para gastar menos.
+        </p>
+        <div class="cta">
+          <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=br.com.quaredx.economizatanque" target="_blank" rel="noopener noreferrer">
+            Baixar no Google Play
+          </a>
+          <a class="btn" href="#features">Ver recursos</a>
+        </div>
+        <p class="small muted">*Link da Play Store provisório — atualizamos assim que a página estiver pública.</p>
+      </div>
+      <div class="hero__art">
+        <div class="phone">
+          <div class="phone__screen">
+            <div class="badge">R$/km</div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar short"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <h2>Recursos principais</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Consumo por km</h3>
+          <p>Veja seu custo por km e por litro com atualização simples a cada abastecimento.</p>
+        </article>
+        <article class="card">
+          <h3>Alertas inteligentes</h3>
+          <p>Receba lembretes de abastecimento com base na sua média e no preço local.</p>
+        </article>
+        <article class="card">
+          <h3>Histórico e metas</h3>
+          <p>Acompanhe evolução mensal e defina metas de economia sem complicação.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="how container">
+      <h2>Como funciona</h2>
+      <ol class="steps">
+        <li>Registre um abastecimento (litros, valor e odômetro).</li>
+        <li>O app calcula o consumo e o custo por km automaticamente.</li>
+        <li>Receba dicas para reduzir gastos e melhore sua média mês a mês.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="y"></span> Quaredx — Todos os direitos reservados.</p>
+    <p>
+      <a href="/privacy.html">Política de Privacidade</a> •
+      <a href="https://github.com/quaredx" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
