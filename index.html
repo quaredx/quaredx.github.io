@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Economiza Tanque — calcule se compensa etanol ou gasolina | Quaredx</title>
   <meta name="description" content="Informe os preços de etanol e gasolina e descubra, pela regra dos 70%, qual vale a pena abastecer agora — simples, rápido e direto." />
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-  <link rel="preload" href="/assets/styles.css" as="style" />
-  <link rel="stylesheet" href="/assets/styles.css" />
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./assets/styles.css" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Economiza Tanque — Etanol ou Gasolina?" />
@@ -41,57 +40,64 @@
         <p class="small muted">*Link da Play Store provisório — atualizamos assim que a página estiver pública.</p>
       </div>
 
+      <!-- Mock do app -->
       <div class="hero__art">
-  <div class="phone">
-    <div class="phone__notch"></div>
+        <div class="phone">
+          <div class="phone__notch"></div>
+          <div class="phone__header">Economiza Tanque</div>
 
-    <div class="phone__header">Economiza Tanque</div>
+          <div class="phone__body">
+            <!-- HEADLINE -->
+            <div class="headline">
+              <div class="headline__icon"></div>
+              <div>
+                <div class="headline__title">Calcule e Economize</div>
+                <div class="headline__desc">
+                  Informe os preços e veja se compensa etanol ou gasolina (regra dos 70%).
+                </div>
+              </div>
+            </div>
 
-    <div class="phone__body">
-      <!-- HEADLINE -->
-      <div class="headline">
-        <div class="headline__icon" aria-hidden="true"></div>
-        <div>
-          <div class="headline__title">Calcule e Economize</div>
-          <div class="headline__desc">
-            Informe os preços e veja se compensa etanol ou gasolina (regra dos 70%).
+            <!-- FORM FICTÍCIO -->
+            <div class="form">
+              <label class="label">Álcool (R$)</label>
+              <div class="fake-input">
+                <span class="prefix">R$</span>
+                <span class="value">3,79</span>
+              </div>
+
+              <label class="label">Gasolina (R$)</label>
+              <div class="fake-input">
+                <span class="prefix">R$</span>
+                <span class="value">5,89</span>
+              </div>
+
+              <button class="fake-button">
+                <!-- <span class="fake-button__icon"></span> -->
+                Calcular
+              </button>
+            </div>
+
+            <!-- RESULTADO (ETANOL) -->
+            <div class="result result--ok">
+              <div class="result__icon"></div>
+              <div class="result__text">
+                <div class="result__title">Abasteça com <strong>ETANOL</strong></div>
+                <div class="result__subtitle">Razão álcool/gasolina: <strong>64,3%</strong></div>
+              </div>
+            </div>
+
+            <!-- RESULTADO (GASOLINA - exemplo alternativo) -->
+            <!-- <div class="result result--warn">
+              <div class="result__icon"></div>
+              <div class="result__text">
+                <div class="result__title">Abasteça com <strong>GASOLINA</strong></div>
+                <div class="result__subtitle">Razão álcool/gasolina: <strong>76,4%</strong></div>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
-
-      <!-- FORM FICTÍCIO -->
-      <div class="form">
-        <label class="label">Álcool (R$)</label>
-        <div class="fake-input">
-          <span class="prefix">R$</span>
-          <span class="value">3,79</span>
-        </div>
-
-        <label class="label">Gasolina (R$)</label>
-        <div class="fake-input">
-          <span class="prefix">R$</span>
-          <span class="value">5,89</span>
-        </div>
-
-        <button class="fake-button">
-          <span class="fake-button__icon"></span>
-          Calcular
-        </button>
-      </div>
-
-      <!-- RESULTADO (ETANOL) -->
-      <div class="result result--ok">
-        <div class="result__icon"></div>
-        <div class="result__text">
-          <div class="result__title">Abasteça com <strong>ETANOL</strong></div>
-          <div class="result__subtitle">Razão álcool/gasolina: <strong>64,3%</strong></div>
-        </div>
-      </div>
-      <!-- Para exibir GASOLINA, troque por: result result--warn -->
-    </div>
-  </div>
-</div>
-
     </section>
 
     <section id="como-funciona" class="how container">
@@ -125,7 +131,7 @@
   <footer class="footer container">
     <p>© <span id="y"></span> Quaredx — Todos os direitos reservados.</p>
     <p>
-      <a href="/privacy.html">Política de Privacidade</a> •
+      <a href="./privacy.html">Política de Privacidade</a> •
       <a href="https://github.com/quaredx" target="_blank" rel="noopener noreferrer">GitHub</a>
     </p>
   </footer>
