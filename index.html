@@ -3,20 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Economiza Tanque — Calcule Alcool x Gasolina | Quaredx</title>
-  <meta name="description" content="Economiza Tanque ajuda você a planejar abastecimentos, acompanhar consumo e reduzir custos de combustível com dicas e métricas simples." />
+  <title>Economiza Tanque — calcule se compensa etanol ou gasolina | Quaredx</title>
+  <meta name="description" content="Informe os preços de etanol e gasolina e descubra, pela regra dos 70%, qual vale a pena abastecer agora — simples, rápido e direto." />
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="preload" href="/assets/styles.css" as="style" />
   <link rel="stylesheet" href="/assets/styles.css" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Economiza Tanque — economize combustível" />
-  <meta property="og:description" content="Planeje abastecimentos, acompanhe consumo e corte custos. Simples, rápido, gratuito." />
+  <meta property="og:title" content="Economiza Tanque — Etanol ou Gasolina?" />
+  <meta property="og:description" content="Digite os preços e veja em segundos se compensa etanol ou gasolina (regra dos 70%)." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://quaredx.github.io/" />
   <meta property="og:image" content="https://quaredx.github.io/assets/og-cover.png" />
-
-  <!-- SEO básico -->
   <meta name="robots" content="index,follow" />
 </head>
 <body>
@@ -30,55 +28,91 @@
   <main>
     <section class="hero container">
       <div class="hero__text">
-        <h1>Economiza <span class="accent">Tanque</span></h1>
+        <h1>Etanol ou Gasolina?</h1>
         <p class="subtitle">
-          O app inteligente para reduzir o custo por km: acompanhe consumo, planeje abastecimentos e receba dicas práticas para gastar menos.
+          Informe os preços e descubra qual compensa abastecer <strong>agora</strong> — usando a <strong>regra dos 70%</strong>. Simples, rápido e direto.
         </p>
         <div class="cta">
           <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=br.com.quaredx.economizatanque" target="_blank" rel="noopener noreferrer">
             Baixar no Google Play
           </a>
-          <a class="btn" href="#features">Ver recursos</a>
+          <a class="btn" href="#como-funciona">Como funciona</a>
         </div>
         <p class="small muted">*Link da Play Store provisório — atualizamos assim que a página estiver pública.</p>
       </div>
+
+      <!-- Mock do app (baseado nas suas imagens; sem usar imagens reais) -->
       <div class="hero__art">
         <div class="phone">
+          <div class="phone__top">
+            <span class="phone__title">Economiza Tanque</span>
+          </div>
+
           <div class="phone__screen">
-            <div class="badge">R$/km</div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar short"></div>
+            <div class="block block--headline">
+              <div class="headline__icon" aria-hidden="true">⛽</div>
+              <div>
+                <div class="headline__title">Calcule e Economize</div>
+                <div class="headline__desc">
+                  Informe os preços e veja se compensa etanol ou gasolina (regra dos 70%).
+                </div>
+              </div>
+            </div>
+
+            <div class="form">
+              <label class="label">Álcool (R$)</label>
+              <div class="input">R$ 3,79</div>
+
+              <label class="label">Gasolina (R$)</label>
+              <div class="input">R$ 5,89</div>
+
+              <div class="btn btn--primary btn--full btn--mock">
+                <span class="calc-ico">🧮</span> Calcular
+              </div>
+            </div>
+
+            <!-- Exemplo de resultado (variação visual conforme regra) -->
+            <div class="card-result card-result--ok">
+              <div class="card-row">
+                <span class="card-ico">⛽</span>
+                <div>
+                  <div class="card-title">Abasteça com <strong>ETANOL</strong></div>
+                  <div class="card-subtitle">Razão álcool/gasolina: <strong>64.3%</strong></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Observação: o layout também contempla o estado GASOLINA (âmbar) -->
           </div>
         </div>
       </div>
     </section>
 
-    <section id="features" class="features container">
-      <h2>Recursos principais</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Consumo por km</h3>
-          <p>Veja seu custo por km e por litro com atualização simples a cada abastecimento.</p>
-        </article>
-        <article class="card">
-          <h3>Alertas inteligentes</h3>
-          <p>Receba lembretes de abastecimento com base na sua média e no preço local.</p>
-        </article>
-        <article class="card">
-          <h3>Histórico e metas</h3>
-          <p>Acompanhe evolução mensal e defina metas de economia sem complicação.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="how container">
+    <section id="como-funciona" class="how container">
       <h2>Como funciona</h2>
       <ol class="steps">
-        <li>Registre um abastecimento (litros, valor e odômetro).</li>
-        <li>O app calcula o consumo e o custo por km automaticamente.</li>
-        <li>Receba dicas para reduzir gastos e melhore sua média mês a mês.</li>
+        <li>Digite o preço do <strong>etanol</strong> e o preço da <strong>gasolina</strong>.</li>
+        <li>O app calcula a <strong>razão álcool/gasolina</strong> automaticamente.</li>
+        <li>Se for <strong>≤ 70%</strong>, compensa <strong>etanol</strong>. Caso contrário, <strong>gasolina</strong>.</li>
       </ol>
+    </section>
+
+    <section class="features container">
+      <h2>Por que usar</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Regra dos 70% automatizada</h3>
+          <p>Sem cálculos manuais. O app faz a conta e recomenda a melhor opção.</p>
+        </article>
+        <article class="card">
+          <h3>Simples e rápido</h3>
+          <p>Interface direta: informe os preços, toque em calcular e pronto.</p>
+        </article>
+        <article class="card">
+          <h3>Foco em economia</h3>
+          <p>Decida com clareza e evite pagar mais por litro no dia a dia.</p>
+        </article>
+      </div>
     </section>
   </main>
 
